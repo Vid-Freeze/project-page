@@ -3,192 +3,145 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Vid-Freeze: Protecting Images from Malicious Image-to-Video Generation via Temporal Freezing">
+    <title>Vid-Freeze: Protecting Images from Malicious Image-to-Video Generation via Temporal Freezing</title>
+    <meta name="description" content="Project page for Vid-Freeze: temporal freezing as a proactive defense against malicious image-to-video generation.">
     <meta property="og:title" content="Vid-Freeze: Protecting Images from Malicious Image-to-Video Generation via Temporal Freezing">
-    <meta property="og:description" content="ECCV 2026 LifeGenIP workshop project page for Vid-Freeze.">
+    <meta property="og:description" content="ECCV 2026 LifeGenIP Workshop project page for Vid-Freeze.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="assets/images/teaser.svg">
-    <title>Vid-Freeze: Protecting Images from Malicious Image-to-Video Generation via Temporal Freezing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Mono:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
-    <header class="site-header">
-      <nav class="nav" aria-label="Main navigation">
-        <a class="brand" href="#">Vid-Freeze</a>
-        <div class="nav-links">
-          <a href="#abstract">Abstract</a>
-          <a href="#method">Method</a>
-          <a href="#results">Results</a>
-          <a href="#videos">Videos</a>
-          <a href="#citation">Citation</a>
+    <main class="wrap">
+      <section class="hero">
+        <h1>Vid-Freeze: Protecting Images from Malicious Image-to-Video Generation via Temporal Freezing</h1>
+        <div class="authors">
+          <a href="https://orcid.org/0000-0001-5227-4992" target="_blank" rel="noopener">Rohit Chowdhury<sup>1,*</sup></a> ·
+          <a href="#" data-placeholder-link>Aniruddha Bala<sup>1,*</sup></a> ·
+          <a href="#" data-placeholder-link>Rohan Jaiswal<sup>1</sup></a> ·
+          <a href="https://orcid.org/0000-0002-6195-8517" target="_blank" rel="noopener">Siddharth Roheda<sup>1</sup></a>
         </div>
-      </nav>
-    </header>
-
-    <main>
-      <section class="hero section">
-        <div class="container">
-          <p class="venue">ECCV 2026 LifeGenIP Workshop</p>
-          <h1>Vid-Freeze: Protecting Images from Malicious Image-to-Video Generation via Temporal Freezing</h1>
-          <p class="subtitle">Temporal freezing as a proactive defense against malicious image-to-video generation.</p>
-
-          <div class="authors" aria-label="Authors">
-            <span><a href="https://orcid.org/0000-0001-5227-4992">Rohit Chowdhury</a><sup>1,*</sup></span>
-            <span><a href="#" data-placeholder-link>Aniruddha Bala</a><sup>1,*</sup></span>
-            <span><a href="#" data-placeholder-link>Rohan Jaiswal</a><sup>1</sup></span>
-            <span><a href="https://orcid.org/0000-0002-6195-8517">Siddharth Roheda</a><sup>1</sup></span>
-          </div>
-
-          <p class="affiliation"><sup>1</sup> Samsung R&amp;D Institute Bangalore</p>
-          <p class="acceptance">Accepted at the ECCV 2026 LifeGenIP Workshop</p>
-          <p class="note">* Equal contribution</p>
-
-          <div class="actions" aria-label="Project links">
-            <a class="button" href="https://arxiv.org/abs/2509.23279">
-              <span aria-hidden="true">PDF</span>
-              <span>Paper</span>
-            </a>
-            <a class="button" href="#videos">
-              <span aria-hidden="true">Play</span>
-              <span>Video</span>
-            </a>
-            <a class="button" href="https://github.com/" data-placeholder-link>
-              <span aria-hidden="true">Git</span>
-              <span>Code</span>
-            </a>
-          </div>
-
-          <figure class="media-frame hero-media">
-            <img src="assets/images/teaser.svg" alt="Vid-Freeze teaser overview">
-            <figcaption>Vid-Freeze teaser overview.</figcaption>
-          </figure>
+        <div class="affil"><sup>1</sup> Samsung R&amp;D Institute Bangalore</div>
+        <div class="equal">* Equal contribution</div>
+        <div class="highlight">Accepted at the ECCV 2026 LifeGenIP Workshop</div>
+        <div class="cta">
+          <a class="btn" href="https://arxiv.org/abs/2509.23279" target="_blank" rel="noopener" aria-label="Open paper">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h12a2 2 0 0 0 2-2V8l-6-6Zm0 2.8L17.2 8H14V4.8ZM8 13h8v1.8H8V13Zm0 3.5h8v1.8H8v-1.8ZM8 9.5h4v1.8H8V9.5Z"/></svg>
+            Paper
+          </a>
+          <a class="btn" href="#results" aria-label="Jump to results">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7L8 5Z"/></svg>
+            Results
+          </a>
+          <a class="btn" href="https://github.com/" data-placeholder-link aria-label="Open code repository">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.11.82-.26.82-.577v-2.17c-3.338.727-4.042-1.416-4.042-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 1.205.084 1.84 1.236 1.84 1.236 1.07 1.834 2.807 1.305 3.492.998.107-.776.42-1.306.763-1.606-2.665-.303-5.466-1.334-5.466-5.933 0-1.31.468-2.382 1.236-3.222-.123-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.3 1.23a11.47 11.47 0 0 1 3.003-.404c1.018.005 2.045.138 3.004.404 2.29-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.873.118 3.176.77.84 1.235 1.912 1.235 3.222 0 4.61-2.805 5.625-5.476 5.92.43.372.823 1.103.823 2.222v3.293c0 .32.218.694.825.576C20.565 21.796 24 17.298 24 12c0-6.63-5.373-12-12-12Z"/></svg>
+            Code
+          </a>
         </div>
       </section>
 
-      <section id="abstract" class="section">
-        <div class="container narrow">
-          <h2>Abstract</h2>
-          <p>
-             The rapid progress of image-to-video (I2V) generation models has introduced significant risks by enabling deceptive or malicious video synthesis from a single image. Prior I2V-specific-defenses attempt to immunize images by inducing spatio-temporal degradation, which does not necessarily provide meaningful protection, since residual motion can still convey malicious intent. In this work, we introduce Vid-Freeze -- a novel adversarial defense that adds imperceptible perturbations to enforce temporal freezing in generated videos. Our method explicitly targets attention dynamics in I2V models to suppress motion synthesis. As a result, immunized images produce standstill or near-static videos, effectively blocking malicious content generation. Experiments demonstrate strong protection across models and support temporal freezing as a promising direction for proactive and meaningful defense against I2V misuse.
-          </p>
-          <p>
-            The page is designed to communicate the core idea, method overview, qualitative comparisons, hosted video
-            demonstrations, and citation details in a compact research-project format.
-          </p>
+      <section id="teaser" class="panel">
+        <div class="thumb">
+          <img src="assets/images/teaser.svg" alt="Vid-Freeze teaser overview">
         </div>
       </section>
 
-      <section id="method" class="section band">
-        <div class="container">
-          <h2>Method at a Glance</h2>
-          <div class="split">
-            <div>
-              <p>
-                Vid-Freeze can be presented here as a compact pipeline: input video, protection or freezing objective,
-                protected output, and downstream editing/generation evaluation.
-              </p>
-              <ul class="feature-list">
-                <li>Video-aware protection for temporal consistency.</li>
-                <li>Support for image and video result grids.</li>
-                <li>Hosted video demos with graceful poster fallbacks.</li>
-                <li>Static GitHub Pages deployment with no build tooling.</li>
-              </ul>
-            </div>
-            <figure class="media-frame">
-              <img src="assets/images/method.svg" alt="Vid-Freeze method overview">
-              <figcaption>Method overview.</figcaption>
-            </figure>
+      <section id="abstract" class="panel">
+        <h2>Abstract</h2>
+        <p>
+          The rapid progress of image-to-video (I2V) generation models has introduced significant risks by enabling deceptive
+          or malicious video synthesis from a single image. Prior I2V-specific defenses attempt to immunize images by inducing
+          spatio-temporal degradation, which does not necessarily provide meaningful protection, since residual motion can still
+          convey malicious intent. In this work, we introduce Vid-Freeze, a novel adversarial defense that adds imperceptible
+          perturbations to enforce temporal freezing in generated videos. Our method explicitly targets attention dynamics in
+          I2V models to suppress motion synthesis. As a result, immunized images produce standstill or near-static videos,
+          effectively blocking malicious content generation. Experiments demonstrate strong protection across models and support
+          temporal freezing as a promising direction for proactive and meaningful defense against I2V misuse.
+        </p>
+      </section>
+
+      <section id="method" class="panel">
+        <h2>Method at a Glance</h2>
+        <p>
+          Vid-Freeze protects an input image before it is used by an image-to-video generation model. The optimization
+          introduces imperceptible perturbations that target temporal attention behavior, suppressing synthesized motion while
+          preserving the protected image's visual quality.
+        </p>
+        <ul>
+          <li>Protects still images against malicious image-to-video generation.</li>
+          <li>Encourages standstill or near-static outputs through temporal freezing.</li>
+          <li>Targets motion synthesis while preserving clean-image appearance.</li>
+          <li>Evaluates protection across representative I2V generation settings.</li>
+        </ul>
+        <div class="thumb">
+          <img src="assets/images/method.png" alt="Vid-Freeze method overview">
+        </div>
+      </section>
+
+      <section id="results" class="panel">
+        <h2>Results</h2>
+        <p>
+          Autoplaying qualitative examples showing generated videos from protected inputs. The browser loads WebM sources first
+          and falls back to the original MP4 files when supported.
+        </p>
+        <div class="video-stack">
+          <div class="thumb video-thumb">
+            <video autoplay loop muted playsinline preload="metadata" poster="assets/images/video-poster-1.svg">
+              <source src="assets/videos/fig_1/composite_000.webm" type="video/webm">
+              <source src="assets/videos/fig_1/composite_000.mp4" type="video/mp4">
+            </video>
+            <div class="small">Figure 1: Composite 000</div>
           </div>
-        </div>
-      </section>
-
-      <section id="results" class="section">
-        <div class="container">
-          <h2>Results</h2>
-          <div class="result-grid">
-            <article class="result-card">
-              <img src="assets/images/result-editing.svg" alt="Video editing protection result">
-              <h3>Protection against Editing</h3>
-              <p>Show before/after comparisons against representative video editing models.</p>
-            </article>
-            <article class="result-card">
-              <img src="assets/images/result-temporal.svg" alt="Temporal consistency result">
-              <h3>Temporal Consistency</h3>
-              <p>Present frame-level and sequence-level evidence that protection remains stable over time.</p>
-            </article>
-            <article class="result-card">
-              <img src="assets/images/result-robustness.svg" alt="Robustness result">
-              <h3>Robustness</h3>
-              <p>Summarize robustness under compression, resizing, noise, and other purification transforms.</p>
-            </article>
+          <div class="thumb video-thumb">
+            <video autoplay loop muted playsinline preload="metadata" poster="assets/images/video-poster-2.svg">
+              <source src="assets/videos/fig_1/composite_003.webm" type="video/webm">
+              <source src="assets/videos/fig_1/composite_003.mp4" type="video/mp4">
+            </video>
+            <div class="small">Figure 1: Composite 003</div>
+          </div>
+          <div class="thumb video-thumb">
+            <video autoplay loop muted playsinline preload="metadata" poster="assets/images/video-poster-1.svg">
+              <source src="assets/videos/fig_2/composite_000.webm" type="video/webm">
+              <source src="assets/videos/fig_2/composite_000.mp4" type="video/mp4">
+            </video>
+            <div class="small">Figure 2: Composite 000</div>
+          </div>
+          <div class="thumb video-thumb">
+            <video autoplay loop muted playsinline preload="metadata" poster="assets/images/video-poster-2.svg">
+              <source src="assets/videos/fig_2/composite_003.webm" type="video/webm">
+              <source src="assets/videos/fig_2/composite_003.mp4" type="video/mp4">
+            </video>
+            <div class="small">Figure 2: Composite 003</div>
           </div>
         </div>
       </section>
 
-      <section id="videos" class="section band">
-        <div class="container">
-          <h2>Video Gallery</h2>
-          <p class="section-intro">
-            Video demonstrations of Vid-Freeze across representative editing and generation scenarios.
-          </p>
-          <div class="video-grid">
-            <article class="video-card">
-              <video controls preload="metadata" poster="assets/images/video-poster-1.svg">
-                <source src="assets/videos/fig_1/composite_000.webm" type="video/webm">
-                <source src="assets/videos/fig_1/composite_000.mp4" type="video/mp4">
-              </video>
-              <h3>Figure 1: Composite 000</h3>
-              <p>Vid-Freeze qualitative video result.</p>
-            </article>
-            <article class="video-card">
-              <video controls preload="metadata" poster="assets/images/video-poster-2.svg">
-                <source src="assets/videos/fig_1/composite_003.webm" type="video/webm">
-                <source src="assets/videos/fig_1/composite_003.mp4" type="video/mp4">
-              </video>
-              <h3>Figure 1: Composite 003</h3>
-              <p>Vid-Freeze qualitative video result.</p>
-            </article>
-            <article class="video-card">
-              <video controls preload="metadata" poster="assets/images/video-poster-1.svg">
-                <source src="assets/videos/fig_2/composite_000.webm" type="video/webm">
-                <source src="assets/videos/fig_2/composite_000.mp4" type="video/mp4">
-              </video>
-              <h3>Figure 2: Composite 000</h3>
-              <p>Vid-Freeze qualitative video result.</p>
-            </article>
-            <article class="video-card">
-              <video controls preload="metadata" poster="assets/images/video-poster-2.svg">
-                <source src="assets/videos/fig_2/composite_003.webm" type="video/webm">
-                <source src="assets/videos/fig_2/composite_003.mp4" type="video/mp4">
-              </video>
-              <h3>Figure 2: Composite 003</h3>
-              <p>Vid-Freeze qualitative video result.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="citation" class="section">
-        <div class="container narrow">
-          <h2>Citation</h2>
-          <div class="citation">
-            <button class="copy-button" type="button" data-copy-target="bibtex">Copy</button>
-            <pre id="bibtex">@inproceedings{vidfreeze2026,
+      <section id="bibtex" class="panel">
+        <h2>Citation</h2>
+        <div class="bibwrap">
+          <button class="copy-ico" type="button" data-copy-target="bib" aria-label="Copy BibTeX" title="Copy BibTeX">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 1H4c-1.1 0-2 .9-2 2v12h2V3h12V1Zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2Zm0 16H8V7h11v14Z"/></svg>
+          </button>
+          <div class="code" id="bib">@inproceedings{chowdhury2026vidfreeze,
   title     = {Vid-Freeze: Protecting Images from Malicious Image-to-Video Generation via Temporal Freezing},
   author    = {Chowdhury, Rohit and Bala, Aniruddha and Jaiswal, Rohan and Roheda, Siddharth},
   booktitle = {ECCV 2026 LifeGenIP Workshop},
   year      = {2026}
-}</pre>
-          </div>
+}</div>
         </div>
       </section>
-    </main>
 
-    <footer class="footer">
-      <div class="container">
-        <p>© 2026 Vid-Freeze authors. Layout inspired by the DCT-Shield project page and the Nerfies project-page template.</p>
-      </div>
-    </footer>
+      <footer>
+        <div class="small">
+          © 2026 Vid-Freeze authors. Template adapted from
+          <a href="https://github.com/nerfies/nerfies.github.io" target="_blank" rel="noopener">nerfies/nerfies.github.io</a>
+          (CC BY-SA 4.0).
+        </div>
+      </footer>
+    </main>
 
     <script src="assets/js/main.js"></script>
   </body>

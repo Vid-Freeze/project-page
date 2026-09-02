@@ -16,7 +16,7 @@ Then visit `http://localhost:8000`.
 
 - Update title, authors, affiliations, abstract, result text, and BibTeX in `index.html`.
 - Replace image placeholders in `assets/images/`.
-- Add video files to `assets/videos/` and update the `<source>` paths in the Video Gallery section. Prefer browser-playable WebM or H.264 MP4 sources.
+- Add video files to `assets/videos/` and update the `<source>` paths in the Results section. Prefer browser-playable WebM or H.264 MP4 sources.
 - The paper link currently points to `https://arxiv.org/abs/2509.23279`.
 - Replace placeholder `href="#"` author links and the GitHub code URL.
 

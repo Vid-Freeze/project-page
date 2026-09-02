@@ -1,6 +1,4 @@
-const placeholderLinks = document.querySelectorAll("[data-placeholder-link]");
-
-placeholderLinks.forEach((link) => {
+document.querySelectorAll("[data-placeholder-link]").forEach((link) => {
   link.addEventListener("click", (event) => {
     const href = link.getAttribute("href") || "";
     if (href === "#" || href === "https://github.com/") {
@@ -11,6 +9,8 @@ placeholderLinks.forEach((link) => {
 });
 
 document.querySelectorAll("[data-copy-target]").forEach((button) => {
+  const original = button.innerHTML;
+
   button.addEventListener("click", async () => {
     const target = document.getElementById(button.dataset.copyTarget);
     if (!target) {
@@ -19,18 +19,31 @@ document.querySelectorAll("[data-copy-target]").forEach((button) => {
 
     try {
       await navigator.clipboard.writeText(target.textContent.trim());
-      button.textContent = "Copied";
+      button.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17Z"/></svg>';
       window.setTimeout(() => {
-        button.textContent = "Copy";
-      }, 1600);
+        button.innerHTML = original;
+      }, 1400);
     } catch {
-      button.textContent = "Select";
+      const range = document.createRange();
+      range.selectNodeContents(target);
+      const selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
     }
   });
 });
 
-document.querySelectorAll("video").forEach((video) => {
-  video.addEventListener("error", () => {
-    video.classList.add("is-missing");
-  });
+document.querySelectorAll("video[autoplay]").forEach((video) => {
+  video.muted = true;
+  video.playsInline = true;
+
+  const play = () => {
+    const attempt = video.play();
+    if (attempt) {
+      attempt.catch(() => {});
+    }
+  };
+
+  video.addEventListener("loadedmetadata", play, { once: true });
+  play();
 });
