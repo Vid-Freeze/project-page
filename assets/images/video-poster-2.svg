@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
-  <rect width="1280" height="720" fill="#11161d"/>
-  <circle cx="640" cy="360" r="92" fill="#b76d28"/>
-  <path d="M614 305l92 55-92 55z" fill="#ffffff"/>
-  <text x="640" y="530" text-anchor="middle" font-family="Arial, sans-serif" font-size="44" font-weight="700" fill="#e8edf3">Demo 2</text>
-</svg>
