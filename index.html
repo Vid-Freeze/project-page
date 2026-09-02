@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Vid-Freeze project page">
+    <meta property="og:title" content="Vid-Freeze">
+    <meta property="og:description" content="Project page for Vid-Freeze with videos, images, paper links, results, and citation.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/images/teaser.svg">
+    <title>Vid-Freeze</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="#">Vid-Freeze</a>
+        <div class="nav-links">
+          <a href="#abstract">Abstract</a>
+          <a href="#method">Method</a>
+          <a href="#results">Results</a>
+          <a href="#videos">Videos</a>
+          <a href="#citation">Citation</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="container">
+          <p class="venue">Project Page</p>
+          <h1>Vid-Freeze</h1>
+          <p class="subtitle">Freezing video generation and editing pipelines against unwanted or malicious transformations.</p>
+
+          <div class="authors" aria-label="Authors">
+            <span><a href="#" data-placeholder-link>Author One</a><sup>1,*</sup></span>
+            <span><a href="#" data-placeholder-link>Author Two</a><sup>1,*</sup></span>
+            <span><a href="#" data-placeholder-link>Author Three</a><sup>1</sup></span>
+            <span><a href="#" data-placeholder-link>Author Four</a><sup>1</sup></span>
+          </div>
+
+          <p class="affiliation"><sup>1</sup> Samsung R&amp;D Institute Bangalore</p>
+          <p class="note">* Equal contribution</p>
+
+          <div class="actions" aria-label="Project links">
+            <a class="button" href="assets/paper/vid-freeze.pdf" data-placeholder-link>
+              <span aria-hidden="true">PDF</span>
+              <span>Paper</span>
+            </a>
+            <a class="button" href="#videos">
+              <span aria-hidden="true">Play</span>
+              <span>Video</span>
+            </a>
+            <a class="button" href="https://github.com/" data-placeholder-link>
+              <span aria-hidden="true">Git</span>
+              <span>Code</span>
+            </a>
+          </div>
+
+          <figure class="media-frame hero-media">
+            <img src="assets/images/teaser.svg" alt="Vid-Freeze teaser overview">
+            <figcaption>Vid-Freeze teaser overview.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="abstract" class="section">
+        <div class="container narrow">
+          <h2>Abstract</h2>
+          <p>
+             The rapid progress of image-to-video (I2V) generation models has introduced significant risks by enabling deceptive or malicious video synthesis from a single image. Prior I2V-specific-defenses attempt to immunize images by inducing spatio-temporal degradation, which does not necessarily provide meaningful protection, since residual motion can still convey malicious intent. In this work, we introduce Vid-Freeze -- a novel adversarial defense that adds imperceptible perturbations to enforce temporal freezing in generated videos. Our method explicitly targets attention dynamics in I2V models to suppress motion synthesis. As a result, immunized images produce standstill or near-static videos, effectively blocking malicious content generation. Experiments demonstrate strong protection across models and support temporal freezing as a promising direction for proactive and meaningful defense against I2V misuse.
+          </p>
+          <p>
+            The page is designed to communicate the core idea, method overview, qualitative comparisons, hosted video
+            demonstrations, and citation details in a compact research-project format.
+          </p>
+        </div>
+      </section>
+
+      <section id="method" class="section band">
+        <div class="container">
+          <h2>Method at a Glance</h2>
+          <div class="split">
+            <div>
+              <p>
+                Vid-Freeze can be presented here as a compact pipeline: input video, protection or freezing objective,
+                protected output, and downstream editing/generation evaluation.
+              </p>
+              <ul class="feature-list">
+                <li>Video-aware protection for temporal consistency.</li>
+                <li>Support for image and video result grids.</li>
+                <li>Hosted video demos with graceful poster fallbacks.</li>
+                <li>Static GitHub Pages deployment with no build tooling.</li>
+              </ul>
+            </div>
+            <figure class="media-frame">
+              <img src="assets/images/method.svg" alt="Vid-Freeze method overview">
+              <figcaption>Method overview.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="results" class="section">
+        <div class="container">
+          <h2>Results</h2>
+          <div class="result-grid">
+            <article class="result-card">
+              <img src="assets/images/result-editing.svg" alt="Video editing protection result">
+              <h3>Protection against Editing</h3>
+              <p>Show before/after comparisons against representative video editing models.</p>
+            </article>
+            <article class="result-card">
+              <img src="assets/images/result-temporal.svg" alt="Temporal consistency result">
+              <h3>Temporal Consistency</h3>
+              <p>Present frame-level and sequence-level evidence that protection remains stable over time.</p>
+            </article>
+            <article class="result-card">
+              <img src="assets/images/result-robustness.svg" alt="Robustness result">
+              <h3>Robustness</h3>
+              <p>Summarize robustness under compression, resizing, noise, and other purification transforms.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="videos" class="section band">
+        <div class="container">
+          <h2>Video Gallery</h2>
+          <p class="section-intro">
+            Video demonstrations of Vid-Freeze across representative editing and generation scenarios.
+          </p>
+          <div class="video-grid">
+            <article class="video-card">
+              <video controls preload="metadata" poster="assets/images/video-poster-1.svg">
+                <source src="assets/videos/fig_1/composite_000.mp4" type="video/mp4">
+              </video>
+              <h3>Figure 1: Composite 000</h3>
+              <p>Vid-Freeze qualitative video result.</p>
+            </article>
+            <article class="video-card">
+              <video controls preload="metadata" poster="assets/images/video-poster-2.svg">
+                <source src="assets/videos/fig_1/composite_003.mp4" type="video/mp4">
+              </video>
+              <h3>Figure 1: Composite 003</h3>
+              <p>Vid-Freeze qualitative video result.</p>
+            </article>
+            <article class="video-card">
+              <video controls preload="metadata" poster="assets/images/video-poster-1.svg">
+                <source src="assets/videos/fig_2/composite_000.mp4" type="video/mp4">
+              </video>
+              <h3>Figure 2: Composite 000</h3>
+              <p>Vid-Freeze qualitative video result.</p>
+            </article>
+            <article class="video-card">
+              <video controls preload="metadata" poster="assets/images/video-poster-2.svg">
+                <source src="assets/videos/fig_2/composite_003.mp4" type="video/mp4">
+              </video>
+              <h3>Figure 2: Composite 003</h3>
+              <p>Vid-Freeze qualitative video result.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="citation" class="section">
+        <div class="container narrow">
+          <h2>Citation</h2>
+          <div class="citation">
+            <button class="copy-button" type="button" data-copy-target="bibtex">Copy</button>
+            <pre id="bibtex">@inproceedings{vidfreeze2026,
+  title     = {Vid-Freeze},
+  author    = {Author One and Author Two and Author Three and Author Four},
+  booktitle = {Conference Name},
+  year      = {2026}
+}</pre>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© 2026 Vid-Freeze authors. Layout inspired by the DCT-Shield project page and the Nerfies project-page template.</p>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

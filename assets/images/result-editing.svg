@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420">
+  <rect width="720" height="420" fill="#ffffff"/>
+  <rect x="40" y="55" width="280" height="220" rx="10" fill="#eef3f7" stroke="#d9dee8" stroke-width="3"/>
+  <rect x="400" y="55" width="280" height="220" rx="10" fill="#dff3f5" stroke="#0b6f7d" stroke-width="3"/>
+  <path d="M340 165h40" stroke="#b76d28" stroke-width="8" stroke-linecap="round"/>
+  <path d="M377 165l-20-15v30z" fill="#b76d28"/>
+  <text x="180" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#17191d">Original</text>
+  <text x="540" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#084d57">Frozen</text>
+</svg>
