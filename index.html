@@ -65,17 +65,6 @@
 
       <section id="method" class="panel">
         <h2>Method at a Glance</h2>
-        <p>
-          Vid-Freeze protects an input image before it is used by an image-to-video generation model. The optimization
-          introduces imperceptible perturbations that target temporal attention behavior, suppressing synthesized motion while
-          preserving the protected image's visual quality.
-        </p>
-        <ul>
-          <li>Protects still images against malicious image-to-video generation.</li>
-          <li>Encourages standstill or near-static outputs through temporal freezing.</li>
-          <li>Targets motion synthesis while preserving clean-image appearance.</li>
-          <li>Evaluates protection across representative I2V generation settings.</li>
-        </ul>
         <div class="thumb method-thumb">
           <img src="assets/images/method.png" alt="Vid-Freeze method overview">
         </div>
@@ -84,8 +73,7 @@
       <section id="results" class="panel">
         <h2>Results</h2>
         <p>
-          Autoplaying qualitative examples showing generated videos from protected inputs. The browser loads WebM sources first
-          and falls back to the original MP4 files when supported.
+
         </p>
         <div class="video-grid">
           <div class="thumb video-thumb">
@@ -93,29 +81,61 @@
               <source src="assets/videos/fig_1/composite_000.webm" type="video/webm">
               <source src="assets/videos/fig_1/composite_000.mp4" type="video/mp4">
             </video>
-            <div class="small">Figure 1: Composite 000</div>
+            <div class="small"></div>
           </div>
           <div class="thumb video-thumb">
             <video autoplay loop muted playsinline preload="metadata">
               <source src="assets/videos/fig_1/composite_003.webm" type="video/webm">
               <source src="assets/videos/fig_1/composite_003.mp4" type="video/mp4">
             </video>
-            <div class="small">Figure 1: Composite 003</div>
+            <div class="small"></div>
           </div>
           <div class="thumb video-thumb">
             <video autoplay loop muted playsinline preload="metadata">
               <source src="assets/videos/fig_2/composite_000.webm" type="video/webm">
               <source src="assets/videos/fig_2/composite_000.mp4" type="video/mp4">
             </video>
-            <div class="small">Figure 2: Composite 000</div>
+            <div class="small"></div>
           </div>
           <div class="thumb video-thumb">
             <video autoplay loop muted playsinline preload="metadata">
               <source src="assets/videos/fig_2/composite_003.webm" type="video/webm">
               <source src="assets/videos/fig_2/composite_003.mp4" type="video/mp4">
             </video>
-            <div class="small">Figure 2: Composite 003</div>
+            <div class="small"></div>
           </div>
+        </div>
+      </section>
+
+      <section id="ablations" class="panel">
+        <h2>Ablations</h2>
+        <h3>Pixel Budget</h3>
+        <div class="thumb video-thumb">
+          <video autoplay loop muted playsinline preload="metadata">
+            <source src="assets/videos/pixel_budget.webm" type="video/webm">
+            <source src="assets/videos/pixel_budget.mp4" type="video/mp4">
+          </video>
+          <div class="small"></div>
+        </div>
+
+        <h3>Sampling Steps</h3>
+        <div class="thumb video-thumb">
+          <video autoplay loop muted playsinline preload="metadata">
+            <source src="assets/videos/k_opt.webm" type="video/webm">
+            <source src="assets/videos/k_opt.mp4" type="video/mp4">
+          </video>
+          <div class="small"></div>
+        </div>
+      </section>
+
+      <section id="robustness" class="panel">
+        <h2>Robustness</h2>
+        <div class="thumb video-thumb">
+          <video autoplay loop muted playsinline preload="metadata">
+            <source src="assets/videos/purification_robustness.webm" type="video/webm">
+            <source src="assets/videos/purification_robustness.mp4" type="video/mp4">
+          </video>
+          <div class="small"></div>
         </div>
       </section>
 
